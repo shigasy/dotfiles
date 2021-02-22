@@ -1,0 +1,34 @@
+# app
+bear
+todoist
+
+# git
+git config --global user.name "shigasy"
+git config --global user.email kxx555u.u@gmail.com
+
+
+# vscode
+VS Codeの拡張機能にsetting syncがある
+
+# TODO
+chrome extension
+
+# brew tapとは
+公式以外のリポジトリをフォーミュラとしてHomebrewに追加するもので、brewのもとでinstall,uninstall,updateなどが行えます
+
+# ghqリポジトリ fzf検索&移動
+^f
+
+# history fzf検索
+^r
+
+# cdd
+ディレクトリの履歴をfzfで絞り、移動
+
+
+# tree-select-buffer
+ファイルを貼れる. fzfと組み合わせ。
+vim ^t であいまい検索
+https://petitviolet.hatenablog.com/entry/20190708/1562544000
+
+^v^tでツリー検索し、vimで開く
