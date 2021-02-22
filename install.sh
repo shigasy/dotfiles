@@ -35,6 +35,7 @@ if [ $(uname) == 'Darwin' ] && !(type brew > /dev/null 2>&1); then
   echo "Installing zsh..."
   brew install zsh
 fi
+echo "Checked HomeBrew"
 
 # ===========================
 # gitインストール
@@ -44,12 +45,13 @@ if [ $(uname) == 'Darwin' ] && !(type git > /dev/null 2>&1); then
   echo "Installing Git..."
   brew install git 2> /dev/null
 fi
+echo "Checked Git"
 
 # ===========================
 # dotfileを$DOTDIRにダウンロード
 echo "Downloading dotfiles..."
 # git clone --recursive https://github.com/$REPOSITORY.git $DOTDIR
-
+echo "Donwloaded Git"
 # ===========================
 # シンボリックリンクを貼る
 
@@ -63,18 +65,21 @@ fi
 
 # ===========================
 # brew install
-echo "Installing package...."
+echo "Installing package..."
 cat $DOTDIR/brew | while read package
 do
   brew install $package
 done
+echo "installed package"
+
 
 # ===========================
 # cask install
-echo "Installing macOS apps...."
+echo "Installing macOS apps..."
 cat $DOTDIR/cask | while read app
 do
   brew cask install $app
 done
+echo "Installed macOS apps"
 
-echo "install..."
+echo "finish"
