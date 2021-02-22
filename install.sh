@@ -19,11 +19,11 @@ if [ "$1" = "deploy" -o "$1" = "d" ]; then
     deploy
 # init or i
 elif [ "$1" = "init" -o "$1" = "i" ]; then
-    initalize
+    initialize
 fi
 
 # DOTPATHが空文字の場合、$HOMEが入る。DOTPATHに$HOMEを保存しない
-DOTPATH=${DOTPATH:-$HOME/.dotfiles}
+DOTPATH=${DOTPATH:=$HOME/.dotfiles}
 REPOSITORY=shigasy/dotfiles
 
 echo $DOTPATH
