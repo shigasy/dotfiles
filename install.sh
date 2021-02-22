@@ -89,4 +89,14 @@ do
 done
 echo "Installed macOS apps"
 
+# sh -c とは
+## cmdstring をシェルの入力行であるかのように実行し、次に終了 します。これは、単一コマンドのためにシェルを呼び出す プログラム (例えば、エディター) によって使用されます。
+
+# change shell
+# /etc/shelss とは 
+## ログインシェルにできるプログラムをフルパスで記述する。ここに登録されていないプログラムをログインシェルにすることはできない。
+sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
+# ログインshell 切り替え
+sudo chsh -s /usr/local/bin/zsh
+
 echo "finish"
