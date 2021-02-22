@@ -14,11 +14,11 @@ initialize() {
 
 }
 
-# -deploy or -d
+# deploy or d
 if [ "$1" = "deploy" -o "$1" = "d" ]; then
     deploy
-# -deploy or -i
-elif [ "$1" = "init" -o "$1" = "i" ; then
+# init or i
+elif [ "$1" = "init" -o "$1" = "i" ]; then
     initalize
 fi
 
