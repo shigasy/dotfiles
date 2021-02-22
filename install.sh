@@ -52,8 +52,15 @@ echo "Checked Git"
 echo "Downloading dotfiles..."
 # git clone --recursive https://github.com/$REPOSITORY.git $DOTDIR
 echo "Donwloaded Git"
+
 # ===========================
 # シンボリックリンクを貼る
+# zsh
+# ln -s $DOTDIR/zsh/.zshenv $HOME/.zshenv
+# tig
+# ln -s $DOTDIR/tig/.tigrc $HOME/.tigrc
+# vim
+# ln -s $DOTDIR/vim/vimrc $HOME/.vimrc
 
 # deploy or d
 if [ "$1" = "deploy" -o "$1" = "d" ]; then
