@@ -2,12 +2,6 @@
 " vimrc
 "----------------------------------------------------
 
-" init scripts
-runtime! init/*.vim
-
-" plugin scripts
-runtime! plugin/*.vim
-
 " :map   :noremap  :unmap     ノーマル、ビジュアル、選択、オペレータ待機
 " :imap  :inoremap :iunmap    挿入
 
