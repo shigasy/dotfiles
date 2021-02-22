@@ -56,3 +56,6 @@ export PATH="$HOME/.nodenv/bin:$PATH"
 
 # openssl
 export PATH=/usr/local/opt/openssl@1.1/bin:$PATH
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"

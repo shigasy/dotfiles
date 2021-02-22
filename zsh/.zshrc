@@ -42,4 +42,5 @@ function fzf-cdr() {
 }
 
 eval "$(nodenv init -)"
+eval "$(pyenv init -)"
 eval "$(starship init zsh)"
