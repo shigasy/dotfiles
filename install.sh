@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/env bash
 
 # このスクリプトを実行している位置にカレントディレクトリが来る
 
@@ -19,15 +19,15 @@ REPOSITORY=shigasy/dotfiles
 
 # HomeBrewとzshのインストール
 # macであり、type brew が実行出来なかったら
-if [[ $(uname) == 'Darwin' && ! -x $(type brew > /dev/null 2>&1) ]]; then
+if [ $(uname) == 'Darwin' ] && !(type brew > /dev/null 2>&1); then
   echo "Installing HomeBrew..."
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   brew install zsh
 fi
 
 # gitインストール
-# macであり、 and type git が実行出来なかったら 出力は捨てる
-if [[ $(uname) == 'Darwin' && ! -x $(type git > /dev/null 2>&1) ]] ; then
+# macであり、 and type git が実行出来なかったら（出力は捨てる）
+if [ $(uname) == 'Darwin' ] && !(type git > /dev/null 2>&1); then
   echo "Downloading Git..."
   brew install git 2> /dev/null
 fi
