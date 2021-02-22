@@ -1,3 +1,5 @@
+#! /bin/env zsh
+
 # functions
 for func (${ZDOTDIR:-$HOME}/functions/*) source $func:a
 
@@ -8,3 +10,6 @@ for func (${ZDOTDIR:-$HOME}/functions/*) source $func:a
 
 # zsh site-functions
 # fpath=(/usr/local/share/zsh/site-functions $fpath)
+
+eval "$(nodenv init -)"
+eval "$(starship init zsh)"
