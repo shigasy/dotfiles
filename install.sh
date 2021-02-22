@@ -85,7 +85,7 @@ echo "installed package"
 echo "Installing macOS apps..."
 cat $DOTDIR/cask | while read app
 do
-  brew install --cask install $app
+  brew install $app
 done
 echo "Installed macOS apps"
 
