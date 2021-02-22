@@ -19,11 +19,11 @@ REPOSITORY=shigasy/dotfiles
 
 # ===========================
 # dotfilesがディレクトリとして存在するかチェック
-echo "Checking dotfiles..."
-if [ -d "$DOTDIR" ]; then
-    echo "$DOTDIR: already exists"
-    exit 1
-fi
+# echo "Checking dotfiles..."
+# if [ -d "$DOTDIR" ]; then
+#     echo "$DOTDIR: already exists"
+#     exit 1
+# fi
 
 # ===========================
 # HomeBrewとzshのインストール
@@ -48,7 +48,7 @@ fi
 # ===========================
 # dotfileを$DOTDIRにダウンロード
 echo "Downloading dotfiles..."
-git clone --recursive https://github.com/$REPOSITORY.git $DOTDIR
+# git clone --recursive https://github.com/$REPOSITORY.git $DOTDIR
 
 # ===========================
 # シンボリックリンクを貼る
