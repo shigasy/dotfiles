@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "## xxxx会議録\n日時:2018\/10\/xx\n場所:xxx会議室\n出席者:xxx,xxx,xxx,xxx\n\n### 1.目的\n* xxxxの対応を決める。\n* xxxxの対応を決める。\n\n### 2.結論\n* xxxxをxxxとする。\n* xxxxをxxxとする。\n\n### 3.A.I.\n* xxxxxする。(担当: xxx 期日： x\/xまで)\n* xxxxxする。(担当: xxx 期日： x\/xまで)\n* xxxxxする。(担当: xxx 期日： x\/xまで)\n\n### 4.議論\n* xxxxはxxxではないか？(Aさん)\n→ xxxにする。",
+    "uid" : "E7964B81-FC85-43BE-9D69-F855EF531263",
+    "name" : "議事録",
+    "keyword" : "議事録"
+  }
+}
