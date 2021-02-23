@@ -7,8 +7,8 @@ curl -LSfs https://raw.githubusercontent.com/shigasy/dotfiles/main/install.sh | 
 ```
 
 ### linux
-GCEは検証済み。gitは動かす前にインストールする必要がある。
-curlやpythonなど、OSに近いAPIを使うから、Dockerの軽いimageとかは使えない
+GCEのDebian系では検証済み。動かす前にGitをインストールする必要がある。
+curlやpythonなど、OSに近いコマンドを使うからDockerなどの軽いimage内では使えない
 
 分岐が面倒だったから、インストールするファイルを分けた。
 ```
