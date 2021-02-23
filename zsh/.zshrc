@@ -48,6 +48,10 @@ function fzf-cdr() {
     fi
 }
 
+alias ls='exa -G --icons'
+alias ll='exa -lG --icons'
+alias la='exa -laG --icons'
+
 eval "$(nodenv init -)"
 eval "$(pyenv init -)"
 
