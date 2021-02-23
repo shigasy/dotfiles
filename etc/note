@@ -1,6 +1,9 @@
 # app
 bear
 todoist
+line
+
+masでお好みにCLIからインストール
 
 # git
 git config --global user.name "shigasy"
