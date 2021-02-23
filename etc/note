@@ -8,7 +8,7 @@ git config --global user.email kxx555u.u@gmail.com
 
 
 # vscode
-VS Codeの拡張機能にsetting syncがある
+VS Codeの拡張機能にsetting syncがある。GitHubでログインすると自動で同期される。
 
 # TODO
 chrome extension

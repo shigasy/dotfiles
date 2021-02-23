@@ -27,11 +27,15 @@ fi
 
 # ===========================
 # HomeBrewとzshのインストール
-# macであり、type brew が実行出来なかったら
+# type brew が実行出来なかったら必要なため入れる
+# HomebrewのインストールにGitが必要
+# 色んなlinuxのversionに対応するのが面倒なので、それぞれのディストリビューションでgitを入れてね
+# sudo apt-get install git-all
 echo "Checking HomeBrew..."
 if !(type brew > /dev/null 2>&1); then
   echo "Installing HomeBrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  export PATH='/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin':"$PATH"
   echo "Installing zsh..."
   brew install zsh
 fi
@@ -39,7 +43,7 @@ echo "Checked HomeBrew"
 
 # ===========================
 # gitインストール
-# macであり、 and type git が実行出来なかったら（出力は捨てる）
+# type git が実行出来なかったら（出力は捨てる）
 echo "Checking Git..."
 if !(type git > /dev/null 2>&1); then
   echo "Installing Git..."
@@ -82,12 +86,12 @@ echo "installed package"
 
 # ===========================
 # cask install
-echo "Installing macOS apps..."
-cat $DOTDIR/cask | while read app
-do
-  brew install $app
-done
-echo "Installed macOS apps"
+# echo "Installing macOS apps..."
+# cat $DOTDIR/cask | while read app
+# do
+#   brew install $app
+# done
+# echo "Installed macOS apps"
 
 # sh -c とは
 ## cmdstring をシェルの入力行であるかのように実行し、次に終了 します。これは、単一コマンドのためにシェルを呼び出す プログラム (例えば、エディター) によって使用されます。

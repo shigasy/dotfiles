@@ -27,6 +27,7 @@ fi
 
 # ===========================
 # HomeBrewとzshのインストール
+# HomebrewのインストールにGitが必要。恐らくプリインストールされているバージョンの低いgitで行けると思う
 # macであり、type brew が実行出来なかったら
 echo "Checking HomeBrew..."
 if [ $(uname) == 'Darwin' ] && !(type brew > /dev/null 2>&1); then
