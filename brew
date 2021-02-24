@@ -9,6 +9,7 @@ go
 jq
 lazydocker
 m-cli
+mas
 node
 nodenv
 openssl
