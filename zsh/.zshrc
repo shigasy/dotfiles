@@ -48,12 +48,6 @@ function fzf-cdr() {
     fi
 }
 
-alias ls='exa -G --icons'
-alias ll='exa -lG --icons'
-alias la='exa -laG --icons'
-
-eval "$(nodenv init -)"
-eval "$(pyenv init -)"
 eval "$(direnv hook zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/zsh/.p10k.zsh.
